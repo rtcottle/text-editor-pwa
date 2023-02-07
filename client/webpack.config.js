@@ -24,7 +24,7 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'service-worker.js',
+        swDest: 'src-sw.js',
       }),
       new WebpackPwaManifest({
         name: 'JATE',
@@ -34,11 +34,12 @@ module.exports = () => {
         theme_color: '#2a5418',
         start_url: './',
         publicPath: './',
+        filename: 'manifest.json',
         icons: [
           {
             src: path.resolve('./src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
-            destination: path.join('dist', 'assets', 'icons'),
+            destination: path.join('assets', 'icons'),
           },
         ],
       }),
