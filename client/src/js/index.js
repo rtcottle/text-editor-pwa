@@ -2,7 +2,7 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/style.css';
-import icon from '../images/logo.png';
+import icon from '../images/logo.png'; //TODO: add the image to the JATE app.
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
