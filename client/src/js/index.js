@@ -2,10 +2,13 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/style.css';
-import icon from '../images/logo.png'; //TODO: add the image to the JATE app.
+import Icon from '../images/logo.png';
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
+
+const image = document.querySelector('#icon');
+image.src = Icon;
 
 const loadSpinner = () => {
   const spinner = document.createElement('div');
